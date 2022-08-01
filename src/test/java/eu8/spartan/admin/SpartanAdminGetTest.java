@@ -77,8 +77,8 @@ public class SpartanAdminGetTest {
                 .when()
                 .get("/api/spartans/{id}");
 
-        //Serenity way of assertion
 
+        //Serenity way of assertion
         Ensure.that("Status code is 200",validatableResponse -> validatableResponse.statusCode(200) );
 
         Ensure.that("Content-type is JSON",vRes -> vRes.contentType(ContentType.JSON));
