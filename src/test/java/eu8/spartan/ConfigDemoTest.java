@@ -1,4 +1,4 @@
-package b22.spartan;
+package eu8.spartan;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

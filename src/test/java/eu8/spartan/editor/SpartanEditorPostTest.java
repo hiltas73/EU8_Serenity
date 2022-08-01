@@ -1,4 +1,4 @@
-package b22.spartan.editor;
+package eu8.spartan.editor;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -7,8 +7,6 @@ import utilities.SpartanNewBase;
 import io.restassured.http.ContentType;
 import net.serenitybdd.junit5.SerenityTest;
 import net.serenitybdd.rest.Ensure;
-import net.serenitybdd.rest.SerenityRest;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utilities.SpartanUtil;
@@ -16,8 +14,6 @@ import utilities.SpartanUtil;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.*;
 import static net.serenitybdd.rest.SerenityRest.lastResponse;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

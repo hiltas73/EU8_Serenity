@@ -1,21 +1,19 @@
-package b22.spartan.admin;
+package eu8.spartan.admin;
 
 import io.restassured.http.ContentType;
 import net.serenitybdd.junit5.SerenityTest;
 import net.serenitybdd.rest.Ensure;
-import net.serenitybdd.rest.SerenityRest;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.baseURI;
-import static io.restassured.RestAssured.*;
 import static net.serenitybdd.rest.SerenityRest.lastResponse;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static net.serenitybdd.rest.SerenityRest.given;
-@Disabled
+
 @SerenityTest
 public class SpartanAdminGetTest {
 
@@ -80,8 +78,7 @@ public class SpartanAdminGetTest {
                 .get("/api/spartans/{id}");
 
         //Serenity way of assertion
-
-        Ensure.that("Status code is 200",validatableResponse -> validatableResponse.statusCode(201) );
+        Ensure.that("Status code is 200",validatableResponse -> validatableResponse.statusCode(200) );
 
         Ensure.that("Content-type is JSON",vRes -> vRes.contentType(ContentType.JSON));
 

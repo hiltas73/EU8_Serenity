@@ -1,4 +1,4 @@
-#Serenity Project
+##Serenity Project
 Serenity BDD is an open source library that aims to make the idea of living documentation a reality.
 
 Here is the [link](https://serenity-bdd.github.io/theserenitybook/latest/index.html) for simple documentation.
@@ -85,8 +85,8 @@ Here is the [link](https://serenity-bdd.github.io/theserenitybook/latest/index.h
         </plugins>
     </build>
 ```
-5.Create a package called `b22` under `src/test/java`
-1. under b22 create `spartan` and under spartan create `admin` packages
+5.Create a package called `eu8` under `src/test/java`
+1. under eu8 create `spartan` and under spartan create `admin` packages
    
 2. create a class called `SpartanAdminGetTest`
 
@@ -102,7 +102,7 @@ Here is the [link](https://serenity-bdd.github.io/theserenitybook/latest/index.h
   * add following lines to properties file 
 ```properties
 serenity.project.name=B22 API Report
-serenity.test.root=b22
+serenity.test.root=eu8
 ```
 9.In order to generate serenity report, we need to use maven goal
 * if you are using command line: `mvn clean verify`  cmd+enter or ctrl+enter if you dont have maven installed locally

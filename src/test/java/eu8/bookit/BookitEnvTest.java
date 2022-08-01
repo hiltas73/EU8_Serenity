@@ -1,4 +1,4 @@
-package b22.bookit;
+package eu8.bookit;
 
 import net.serenitybdd.junit5.SerenityTest;
 import org.junit.jupiter.api.Test;
